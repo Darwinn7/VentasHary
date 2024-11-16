@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ventas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registroG.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto mt-10">
+        <header class="text-center mb-6">
+            <h1 class="text-4xl font-bold text-green-500">Registro de Ventas</h1>
+        </header>
+        <main>
+            <form id="sales-form" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="form-group">
+                        <label for="customer-name" class="block text-sm font-medium text-gray-300">Nombre del Cliente:</label>
+                        <input type="text" id="customer-name" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-name" class="block text-sm font-medium text-gray-300">Nombre del Producto:</label>
+                        <input type="text" id="product-name" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-value" class="block text-sm font-medium text-gray-300">Valor del Producto:</label>
+                        <input type="number" id="product-value" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sale-value" class="block text-sm font-medium text-gray-300">Valor de la Venta:</label>
+                        <input type="number" id="sale-value" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-date" class="block text-sm font-medium text-gray-300">Fecha de Pago:</label>
+                        <input type="date" id="payment-date" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="installments" class="block text-sm font-medium text-gray-300">Abonos:</label>
+                        <input type="number" id="installments" class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-white" required>
+                    </div>
+                </div>
+                <button type="submit" class="mt-6 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md">Registrar Venta</button>
+            </form>
+        </main>
+    </div>
+    <script src="../js/registroG.js"></script>
+</body>
+</html>
